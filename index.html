@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Invitación al acto</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section class="parallax">
+    <div class="contenido">
+<audio id="musicaFondo" autoplay loop muted>
+  <source src="bandera.mp3" type="audio/mpeg"></audio>
+<button id="control-musica" aria-label="Pausar música">
+  <img src="iconmusica.png" alt="icono-musica"/>
+</button>
+    </div>
+    <section class="hero">
+      <div>
+        <img src="nueva.png" alt="Icono decorativo" style="width: 110px; height: auto; margin: 100px;margin-top:0%; margin-bottom: 0%; flex; align-items: center; bottom: 100%;">
+      </div>
+    <p>Invitamos a usted al </p>
+    <h1>JURAMENTO DE LEALTAD Y HONOR</h1>
+    <h3>"Desde nuestra Institucion, invitamos a toda la comunidad a participar del acto protocolar de Promesa a la Bandera, en conmemoracion de otro Aniversario de la muerte de su creador, el General Manuel Belgrano.
+      Sera un momento muy emotivo en donde se realizara la Jura de Fidelidad a la Bandera Nacional Argentina, uno de los rituales Patrios mas importantes de nuestra Nacion."</h3>
+    <div class="countdown-container">
+  <div class="countdown-box">
+    <span id="days">00</span>
+    <small>Días</small>
+
+  </div>
+  <div class="countdown-box">
+    <span id="hours">00</span>
+    <small>Horas</small>
+  </div>
+  <div class="countdown-box">
+    <span id="minutes">00</span>
+    <small>Minutos</small>
+  </div>
+  <div class="countdown-box">
+    <span id="seconds">00</span>
+    <small>Segundos</small>
+  </div>
+</div>
+    <div class="texto"
+    <p>"Mi promesa no es solo una palabra, es el compromiso de amar a mi Pais, de respetar sus valores y de construir cada dia una Argentina mas justa. Hoy no solo te juro fidelidad, sino que prometo honrrarte con mis acciones, mis palabras y mi amor por esta tierra." </p>
+  </div>
+    </section>
+<section class="parallax segunda">
+  <div class="contenido">
+    <!-- Podés agregar un mensaje final, detalles o dejarlo vacío para que se luzca la imagen -->
+  </div>
+</section>
+
+    <section class="details">
+    <img src="web.png" alt="Icono" style="width: 40px; height: 40px; margin-right:1px; margin-top: 8px;">
+    <h2>Lugar</h2>
+    <p>Escuela 258 "Rosario Vera Peñaloza"</p>
+    <img src="icononegro.png" alt="Icono de ubicación" style="width: 40px; height: 40px; margin-right:1px; margin-top: 30px;";>
+    <h2>Fecha y hora</h2>
+    <p>Lunes 23 de junio - 15:00 hs</p>
+    </section>
+
+    <div style="width: 200px; height: 200px;">
+
+    </div>
+
+    
+<footer class="pie">
+    <p>Con cariño 💙</p> 
+     <p> Escuela 258 "Rosario Vera Peñaloza"</p>
+  </footer>
+
+    <script src="script.js"></script>
+
+ <script>
+  const audio = document.getElementById("musicaFondo");
+  const control = document.getElementById("control-musica");
+
+
+  // Controlar play/pausa desde el ícono
+  control.addEventListener('click', function (e) {
+    e.stopPropagation(); // Evita conflicto con el primer clic del window
+    if (audio.paused) {
+      audio.play();
+      control.textContent = 'iconmusica.png'; // Sonando
+    } else {
+      audio.pause();
+      control.textContent = 'iconmuted.png'; // En silencio
+    }
+  });  
+
+  function activarMusica() {
+    audio.muted = false;
+    audio.play();
+    document.removeEventListener('touchstart', activarMusica);
+  }
+
+  // Detecta cualquier toque en pantalla
+  document.addEventListener('touchstart', activarMusica, { once: true });
+  </script>
+
+
+
+
+
+</body>
+</html>

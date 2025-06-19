@@ -1,0 +1,307 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to bottom, #001f3f, #003366);
+color: rgb(255, 255, 255);
+text-align: center;
+padding: 0;
+
+}
+.hero h1{
+  font-family: Cinzo, sans-serif;
+  font-size: 2rem;
+}
+
+#control-musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  transition: background 0.3s ease;
+}
+
+#control-musica:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#control-musica img {
+  display: block;
+  margin: 0 auto;
+  vertical -align: middle;
+  width: 30px; /* Ajusta el tamaño del icono */
+
+}
+
+#control-musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* Otros estilos ya existentes */
+}
+
+.details {
+  background-color: #000;
+  color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 50%;
+  height: 350px;
+  margin: 100px auto 0 auto; /* lo baja y lo centra */
+  box-shadow: 0 0 20px rgba(255, 230, 3, 0.534);
+}
+
+
+
+.parallax {
+  min-height: 100vh;
+  background-image: url("bandera.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* o directamente, quitá esa línea */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Empuja el contenido hacia abajo */
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+  
+.parallax.segunda {
+  background-image: url("grito.jpeg"); /* La nueva imagen al hacer scroll */
+  min-height: 50vh; 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+    height: 10px;
+  display: cover;
+  
+  align-items: center;
+  text-align: center;
+  
+  overflow: hidden;
+}
+
+
+.contenido {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 30px;
+  border-radius: 15px; 
+  z-index: 2; 
+  position: relative;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+    margin: 0 auto;
+  margin-bottom: 210px;
+ /* desplaza el contenido hacia arriba */
+
+}
+.texto {
+  font-size: 1.0rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 80px;
+  flex-wrap: nowrap; 
+}
+
+.countdown-box {
+  background-color: rgba(44, 42, 36, 0.705);
+  padding: 10px 12px;
+  border-radius: 10px;
+  width: 60px;
+  box-shadow: 0 0 10px #fde24b7c;
+}
+
+
+.countdown-box span {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  color: #ffffff;
+}
+
+.countdown-box small {
+  font-size: 0.9rem;
+  color: #eeeeee;
+}
+
+.count-box {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(44, 62, 80, 0.10);
+    width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+.count-svg {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    opacity: 0.12;
+    z-index: 0;
+    
+}
+
+.count-num {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #00193a;
+    z-index: 1;
+    margin-top: 18px;
+}
+
+.count-label {
+    font-size: 1rem;
+    color: #ffffff;
+    z-index: 1;
+    margin-top: 6px;
+    letter-spacing: 1px;
+}
+.hero {
+padding: 50px 20px;
+animation: fadeIn 2s ease-in-out;
+}
+.hero p {
+    position: relative;
+font-weight: bold;
+font-size: 1rem;
+top: -20px;
+
+}
+.hero h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+position: relative;
+background-color: #ffffff;
+background-image: linear-gradient(to right, #00acfc, #0b549c);
+ -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+top: -70px;
+}
+.h3 {
+font-size: 1.5rem;
+margin-bottom: 20px;
+position: relative;
+
+}
+
+
+.btn {
+margin-top: 80px;
+display: inline-block;
+margin-bottom: 50px;
+padding: 12px 24px; 
+background-color: #000653;
+color: white;
+border-radius: 30px;
+text-decoration: none;
+font-weight: bold; 
+transition: background 0.3s;
+}
+
+.btn:hover {
+background-color: #00a87a;
+}
+
+.info {
+margin: 40px 0;
+}
+
+
+
+.web.png {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    
+
+}
+.calendar.png{
+    display: flex; align-items: center;
+    justify-content: center;
+}
+
+
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+footer.pie {
+
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+    background-color: #002b57;
+  font-size: 0.45rem; 
+  font-weight: bold; 
+  font-size: 12px;;
+  position: absolute;
+  padding-bottom: 50px;
+  height: 40px;
+  width: 100%;
+    bottom: 0;
+ 
+}
+
+
+
+
+/* Elimina cualquier pseudoelemento oculto */
+.parallax::before,
+.parallax::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Elimina padding/margen que pueda aparecer en el navegador */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Opcional: ocultá cualquier elemento accidental sin contenido */
+.parallax > *:empty {
+  display: none;
+}
+
+
