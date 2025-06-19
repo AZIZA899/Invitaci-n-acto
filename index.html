@@ -85,10 +85,10 @@
     e.stopPropagation(); // Evita conflicto con el primer clic del window
     if (audio.paused) {
       audio.play();
-      control.textContent = 'iconmusica.png'; // Sonando
+      icon.src= 'iconmusica.png'; // Sonando
     } else {
       audio.pause();
-      control.textContent = 'iconmuted.png'; // En silencio
+      icon.src= 'iconmuted.png'; // En silencio
     }
   });  
 
